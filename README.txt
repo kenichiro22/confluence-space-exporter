@@ -1,17 +1,17 @@
-Confluence�̃h�L�������g�̍X�V�L�����m�F���āAPDF/HTML�ɃG�N�X�|�[�g��
-�w�肵���X�y�[�X�̃y�[�W�ɂɓY�t�t�@�C���Ƃ��ăA�b�v���[�h���܂��B
+Confluenceのドキュメントの更新有無を確認して、PDF/HTMLにエクスポートし
+指定したスペースのページにに添付ファイルとしてアップロードします。
 
-�g�����F
+使い方：
 groovy SpaceExporter.groovy ConfluenceURL username password timeSpan
 
-timeSpan�́A�����ȓ��ɍX�V����Ă�����G�N�X�|�[�g�����������w�肵�܂��B
-�i�w�肵�Ȃ���1���ȓ��ɂȂ�܂��j
+timeSpanは、何日以内に更新されていたらエクスポートし直すかを指定します。
+（指定しないと1日以内になります）
 
-"pdf_docs"��������"html_docs"�Ƃ������x����t�����̃X�y�[�X���A
-���ꂼ��HTML/PDF�ւ̃G�N�X�|�[�g�ΏۂɂȂ�܂��B
+"pdf_docs"もしくは"html_docs"というラベルを付けたのスペースが、
+それぞれHTML/PDFへのエクスポート対象になります。
 
-�A�b�v���[�h����X�y�[�X�L�[��'DOCS'�A�y�[�W��'Home'�ɂȂ��Ă��܂��B
+アップロードするスペースキーは'DOCS'、ページは'Home'になっています。
 
 
-�� Groovy��XML-RPC���C�u�������K�v�ł��B
+※ GroovyのXML-RPCライブラリが必要です。
 http://groovy.codehaus.org/XMLRPC
